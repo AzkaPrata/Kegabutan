@@ -57,16 +57,13 @@ $(".clicker").click(function click(){
               )
               angka = 0
               $(".angka").text(angka)
+              $(".title").text("Click")
             } else if (
               /* Read more about handling dismissals below */
               result.dismiss === Swal.DismissReason.cancel
             ) {
               Swal.fire(
                 'Gak Jadi Deh',
-                ['____ ____',
-                 '==== ====',
-                
-                '==========='],
                 'error'
               )
             }
